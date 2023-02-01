@@ -1,8 +1,16 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
+        maven {
+            url = 'https://maven.minecraftforge.net/'
+            content {
+                includeGroup "net.minecraftforge.gradle"
+                includeGroup "net.minecraftforge"
+            }
+        }
+        maven {
+            url = 'https://maven.parchmentmc.org'
+        }
     }
 }
 
-rootProject.name = 'occultic_extensions'
