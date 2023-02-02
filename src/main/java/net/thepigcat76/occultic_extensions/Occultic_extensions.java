@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.thepigcat76.occultic_extensions.registry.ModBlocks;
 import net.thepigcat76.occultic_extensions.registry.ModItems;
 import org.slf4j.Logger;
 
@@ -21,7 +22,8 @@ public class Occultic_extensions {
     public Occultic_extensions() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "occultic_extensions:block/otherstone_brick",
+    "top": "occultic_extensions:block/otherstone_brick",
+    "side": "occultic_extensions:block/otherstone_brick"
+  }
+}

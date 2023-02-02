@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "occultic_extensions:block/otherstone_brick_slab"
+    },
+    "type=top": {
+      "model": "occultic_extensions:block/otherstone_brick_slab_top"
+    },
+    "type=double": {
+      "model": "occultic_extensions:block/otherstone_brick"
+    }
+  }
+}
